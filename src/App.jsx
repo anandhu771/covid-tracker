@@ -13,14 +13,13 @@ function App() {
   const [filteredData, setFilteredData] = useState(covidData);
 
   const handleFilterChange = (state) => {
-    dispatch(filterByState(state)); 
+    dispatch(filterByState(state));
     setFilteredData(
       state === "All"
         ? covidData
         : covidData.filter((data) => data.state === state)
     );
   };
-console.log("filtered data",filteredData);
   return (
     <div>
       <h1>COVID Dashboard</h1>
@@ -29,7 +28,7 @@ console.log("filtered data",filteredData);
         onFilterChange={handleFilterChange}
       />
       <PieChart data={filteredData[0]} />
-      <LineChart data={filteredData[0]} />
+      <LineChart data={filteredData} />
       <MapView data={covidData} />
     </div>
   );
