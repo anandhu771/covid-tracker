@@ -32,7 +32,7 @@ Make sure you have the following installed on your machine:
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/your-username/covid-dashboard.git
+   git clone https://github.com/anandhu771/covid-tracker.git
 
 2. **Navigate to the project directory**:
 
